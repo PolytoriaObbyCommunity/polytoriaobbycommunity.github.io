@@ -1,0 +1,315 @@
+/*
+-> Currently code might have unused styles, will keep them as I might need them later.
+-> I don't ever wanna touch metabox again.
+*/
+body {
+    background: #0d0f14;
+    color: #eaeaf0;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 20px;
+    background: rgba(26, 26, 34, 0.85);
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.title-text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.right button {
+    background: transparent;
+    border: none;
+    color: #cfd3ff;
+    margin-left: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.right button:hover {
+    color: white;
+    transform: translateY(-1px);
+}
+
+.tab {
+    display: none;
+    padding: 25px 15px;
+}
+
+.tab.active {
+    display: block;
+}
+
+#list {
+    max-width: 950px;
+    margin: auto;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    background: linear-gradient(145deg, #171924, #131520);
+    margin-bottom: 12px;
+    padding: 14px;
+    border-radius: 14px;
+
+    transition: 0.2s ease;
+    cursor: pointer;
+
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.level:hover {
+    transform: translateY(-3px);
+    border-color: rgba(88,101,242,0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.thumb {
+    width: 90px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.rank {
+    font-size: 18px;
+    font-weight: 700;
+    width: 55px;
+    text-align: center;
+    color: #8f93ff;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.desc {
+    font-size: 13px;
+    color: #a9adc1;
+    margin-top: 4px;
+}
+
+.meta {
+    font-size: 12px;
+    color: #8b90a8;
+    margin-top: 6px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.meta img {
+    width: 14px;
+    height: 14px;
+    opacity: 0.9;
+}
+
+.play {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    text-decoration: none;
+    background: linear-gradient(135deg, #5865f2, #4752c4);
+    padding: 9px 14px;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.play:hover {
+    transform: scale(1.05);
+}
+
+.play-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.level-page {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.level-card {
+    background: #161823;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.level-page h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 650px;
+    height: 360px;
+    border-radius: 12px;
+}
+
+.meta-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    margin-top: 15px;
+    padding: 12px;
+
+    background: #121420;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.05);
+
+    font-size: 13px;
+    color: #c7c9d6;
+}
+
+.meta-box b {
+    color: #ffffff;
+}
+
+/* Placeholder - delete it when no palceholders needed!!! */
+/* yuss */
+.placeholder {
+    text-align: center;
+    color: gray;
+    margin-top: 20px;
+}
+
+.progress-box {
+    margin-top: 15px;
+    padding: 15px;
+
+    background: #121420;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.05);
+
+    text-align: left;
+}
+
+.progress-box h3 {
+    margin: 0px 0px 10px 0px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.progress-item {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 8px 10px;
+    background: #1a1d2b;
+    border-radius: 10px;
+
+    font-size: 13px;
+}
+
+.player {
+    color: #cfd3ff;
+    font-weight: 600;
+}
+
+.stage {
+    color: #8b90a8;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 8px 12px;
+    border-radius: 10px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #cfd3ff;
+    text-decoration: none;
+
+    background: transparent;
+    border: 1px solid transparent;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: rgba(88, 101, 242, 0.12);
+    border-color: rgba(88, 101, 242, 0.35);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.nav-btn:active {
+    transform: translateY(0px);
+}

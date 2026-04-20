@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="data/icons/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--topbar-->
+<div class="topbar">
+    <div class="left">
+        <img src="data/icons/logo.png" class="logo">
+        <span class="title-text">POC List</span>
+    </div>
+
+    <div class="nav">
+        <a class="nav-btn" href="index.html">List</a>
+        <a class="nav-btn" href="index.html#leaderboard">Leaderboard</a>
+    </div>
+
+    <a href="https://discord.gg/TD6pDdXDaj" target="_blank" class="play join-btn">
+        <img src="data/icons/discord.svg" class="play-icon">
+        Join
+    </a>
+</div>
+
+<div id="level-container"></div>
+
+<!--i wanted to keep files less and put it here instead-->
+<!--as level.html is originally around 20 lines itself-->
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+
+    function showLeaderboard() {
+        window.location.href = "index.html#leaderboard";
+    }
+
+    function getYouTubeEmbed(url) {
+        const match = url.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=)([^&]+)/);
+        if (!match) return null;
+        return `https://www.youtube.com/embed/${match[1]}`;
+    }
+
+    async function loadLevel() {
+        const params = new URLSearchParams(window.location.search);
+        const levelName = decodeURIComponent(params.get("level"));
+
+        document.title = levelName + " | POC List";
+
+        const res = await fetch("data/obby_list.json");
+        const data = await res.json();
+
+        const level = data[levelName];
+
+        const container = document.getElementById("level-container");
+
+        const videoEmbed = getYouTubeEmbed(level.verification);
+
+        /// todo: make the topbar work in level page too
+        container.innerHTML = `
+            <div class="level-page">
+
+                <div class="level-card">
+
+                    <h1>${levelName}</h1>
+
+                    ${videoEmbed ? `
+                        <div class="video-container">
+                            <iframe src="${videoEmbed}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    ` : ""}
+
+                    <p>${level.description}</p>
+
+                    <div class="meta-box">
+                        <div><b>Creator:</b> ${level.creators}</div>
+                        <div><b>Verifier:</b> ${level.verifier}</div>
+                        <div><b>Points:</b> ${level.points}</div>
+                        <div><b>Length:</b> ${level.length}</div>
+                    </div>
+
+                    ${level.progress ? `
+                        <div class="progress-box">
+                            <h3>Progress</h3>
+
+                            <div class="progress-list">
+                                ${Object.entries(level.progress).map(([player, stage]) => `
+                                    <div class="progress-item">
+                                        <span class="player">${player}</span>
+                                        <span class="stage">${stage}</span>
+                                    </div>
+                                `).join("")}
+                            </div>
+                        </div>
+                    ` : ""}
+
+                    <br>
+
+                    <a href="${level.link}" target="_blank" class="play">
+                        <img src="data/icons/link.svg" class="play-icon">
+                        Play
+                    </a>
+
+                </div>
+            </div>
+        `;
+    }
+
+    loadLevel();
+</script>
+
+</body>
+</html>

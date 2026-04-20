@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POC List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data/icons/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!--topbar-->
+<div class="topbar">
+    <div class="left">
+        <img src="data/icons/logo.png" class="logo">
+        <span class="title-text">POC List</span>
+    </div>
+
+    <div class="nav">
+        <a class="nav-btn" onclick="showTab('levels')">List</a>
+        <a class="nav-btn" onclick="showTab('leaderboard')">Leaderboard</a>
+    </div>
+
+    <a href="https://discord.gg/TD6pDdXDaj" target="_blank" class="play join-btn">
+        <img src="data/icons/discord.svg" class="play-icon">
+        Join
+    </a>
+</div>
+
+<!-- LEVELS -->
+<div id="levels" class="tab active">
+    <div id="list"></div>
+</div>
+
+<!-- LEADERBOARD -->
+<div id="leaderboard" class="tab">
+    <h1 class="title">Leaderboard</h1>
+    <p class="placeholder">Leaderboard coming soon...</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
