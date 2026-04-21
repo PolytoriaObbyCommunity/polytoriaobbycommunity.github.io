@@ -16,8 +16,10 @@
     </div>
 
     <div class="nav">
-        <a class="nav-btn" href="index.html">List</a>
-        <a class="nav-btn" href="index.html#leaderboard">Leaderboard</a>
+        <a class="nav-btn" data-tab="levels" href="index.html">List</a>
+        <a class="nav-btn" data-tab="leaderboard" href="index.html#leaderboard">Leaderboard</a>
+
+        <div class="nav-line"></div>
     </div>
 
     <a href="https://discord.gg/TD6pDdXDaj" target="_blank" class="play join-btn">
@@ -31,6 +33,24 @@
 <!--i wanted to keep files less and put it here instead-->
 <!--as level.html is originally around 20 lines itself-->
 <script>
+    function updateNavLine(tabId) {
+        const buttons = document.querySelectorAll(".nav-btn");
+        const line = document.querySelector(".nav-line");
+
+        const activeBtn = [...buttons].find(btn => btn.dataset.tab === tabId);
+        if (!activeBtn || !line) return;
+
+        const rect = activeBtn.getBoundingClientRect();
+        const parentRect = activeBtn.parentElement.getBoundingClientRect();
+
+        line.style.width = rect.width + "px";
+        line.style.transform = `translateX(${rect.left - parentRect.left}px)`;
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+        updateNavLine("levels");
+    });
+
     function goHome() {
         window.location.href = "index.html";
     }
@@ -60,8 +80,9 @@
 
         const videoEmbed = getYouTubeEmbed(level.verification);
 
-        /// todo: make the topbar work in level page too
         container.innerHTML = `
+            <h1 class="page-title">${levelName}</h1>
+            
             <div class="level-page">
 
                 <div class="level-card">
