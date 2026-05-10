@@ -1,10 +1,13 @@
 {
     "Kai": {
-        "flag": "uk",
-        "verifications": ["Toothpaste Ideology","Toothpaste Ideology: Nerfed"],
-        "wins": ["Toothpaste Ideology","Toothpaste Ideology: Nerfed"],
-        "hardest": "Toothpaste Ideology",
-        "hardest_place": 1,
-        "points": 1900
+        "flag": "gb",
+        "verifications": ["Toothpaste Ideology","Toothpaste Ideology - Nerfed", "Purple Obby", "Tower of Treachery: Limit", "Tower of Pure Malice", "Batteries Not Included", "mentacap's first hard polytoria obby", "Waiting for you..."],
+        "wins": ["Toothpaste Ideology","Toothpaste Ideology - Nerfed", "Purple Obby", "Tower of Treachery: Limit", "Tower of Pure Malice", "Batteries Not Included", "mentacap's first hard polytoria obby", "Waiting for you...", "Tower of Treachery: Floor 1"]
+    },
+
+    "huurduurbuur": {
+        "flag": "us",
+        "verifications": ["Teeny Tiny Gaps"],
+        "wins": ["Teeny Tiny Gaps", "Tower of Intermediate Jumps", "Edifice of Woven Pain", "Tower of Treachery: Floor 1", "Cosmic Graveyard", "High Alignment Society", "Tower of Ice", "Purple Obby", "Monolith", "mentacap's first hard polytoria obby", "Batteries Not Included", "Polytoric Hell", "Tower of Intermediate Jumps"]
     }
 }

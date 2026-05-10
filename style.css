@@ -3,8 +3,8 @@
     -> I don't ever wanna touch metabox again.
 */
 body {
-    background: #0d0f14;
-    color: #eaeaf0;
+    background: #120b0f;
+    color: #f0e9ec;
     font-family: "Montserrat", sans-serif;
     margin: 0;
 }
@@ -15,14 +15,14 @@ body {
     align-items: center;
 
     padding: 12px 20px;
-    background: rgba(26, 26, 34, 0.85);
+    background: rgba(34, 18, 22, 0.88);
     backdrop-filter: blur(10px);
 
     position: sticky;
     top: 0;
     z-index: 100;
 
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .left {
@@ -35,13 +35,14 @@ body {
     width: 34px;
     height: 34px;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
 .title-text {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.5px;
+    color: #fff6f8;
 }
 
 .title-main {
@@ -57,7 +58,7 @@ body {
 .right button {
     background: transparent;
     border: none;
-    color: #cfd3ff;
+    color: #d9d3ff;
     margin-left: 12px;
     cursor: pointer;
     font-size: 14px;
@@ -85,40 +86,100 @@ body {
 }
 
 .level {
+    position: relative;
+    overflow: hidden;
+
     display: flex;
     align-items: center;
     gap: 14px;
 
-    background: linear-gradient(145deg, #171924, #131520);
     margin-bottom: 12px;
     padding: 14px;
-    border-radius: 14px;
+    border-radius: 12px;
 
     transition: 0.2s ease;
     cursor: pointer;
 
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: #1a1115;
 }
 
 .level:hover {
-    transform: translateY(-3px);
-    border-color: rgba(88,101,242,0.4);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border-color: rgba(88, 101, 242, 0.45);
+    box-shadow: 0 10px 30px rgba(20, 0, 8, 0.42);
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(255, 136, 136, 0.623);
+}
+
+.level::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(22, 10, 14, 0.96),
+        rgba(22, 10, 14, 0.72)
+    );
+
+    z-index: 1;
+    pointer-events: none;
 }
 
 .thumb {
-    width: 90px;
-    height: 65px;
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+
+    z-index: 0;
+    opacity: 0.38;
+}
+
+.level .info,
+.level .rank,
+.level .play,
+.level .play-wrapper,
+.level-tags {
+    position: relative;
+    z-index: 2;
 }
 
 .rank {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     width: 55px;
     text-align: center;
-    color: #8f93ff;
+    color: #ffffff;
+}
+
+.rank.gold {
+    color: #ffe96d;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+.rank.silver {
+    color: #c0c0c0;
+    text-shadow: 0 0 6px rgba(192, 192, 192, 0.5);
+}
+
+.rank.bronze {
+    color: #c0762b;
+    text-shadow: 0 0 6px rgba(205, 127, 50, 0.5);
+}
+
+.level:hover .rank.gold {
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.9);
+}
+
+.level:hover .rank.silver {
+    text-shadow: 0 0 10px rgba(192, 192, 192, 0.8);
+}
+
+.level:hover .rank.bronze {
+    text-shadow: 0 0 10px rgba(205, 127, 50, 0.8);
 }
 
 .info {
@@ -129,17 +190,18 @@ body {
     font-size: 17px;
     font-weight: 600;
     color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.253);
 }
 
 .desc {
     font-size: 13px;
-    color: #a9adc1;
+    color: #c9b9c0;
     margin-top: 4px;
 }
 
 .meta {
     font-size: 12px;
-    color: #8b90a8;
+    color: #a997a0;
     margin-top: 6px;
     display: flex;
     gap: 12px;
@@ -155,7 +217,7 @@ body {
 .meta img {
     width: 14px;
     height: 14px;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .play {
@@ -165,20 +227,29 @@ body {
     gap: 8px;
 
     text-decoration: none;
-    background: linear-gradient(135deg, #5865f2, #4752c4);
-    box-shadow: 0 4px 12px rgba(38, 0, 143, 0.5);
+    background: linear-gradient(135deg, #76ff76, #a8d9ab);
+    box-shadow: 0 4px 12px rgba(70, 120, 70, 0.28);
     padding: 9px 14px;
-    border-radius: 10px;
+    border: 2px solid rgb(159, 255, 130);
+    border-radius: 9px;
 
-    color: white;
+    color: #1c231d;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
 
     transition: 0.2s;
 }
 
 .play:hover {
     transform: scale(1.05);
+    background: linear-gradient(135deg, #80ff80, #b1dab3);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    color: #3f3f3f;
+}
+
+.play.join-btn {
+    background: linear-gradient(135deg, #536cff, #8183ff);
+    border: 2px solid rgb(91, 156, 255);
 }
 
 .play-icon {
@@ -197,15 +268,16 @@ body {
 }
 
 .level-card {
-    background: #161823;
+    background: #181015;
     padding: 20px;
-    border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .level-page h1 {
     font-size: 28px;
     margin-bottom: 10px;
+    color: #fff7f9;
 }
 
 .video-container {
@@ -229,12 +301,12 @@ body {
     margin-top: 15px;
     padding: 12px;
 
-    background: #121420;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.05);
+    background: #130c10;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 
     font-size: 13px;
-    color: #c7c9d6;
+    color: #d4c5ca;
 }
 
 .meta-box b {
@@ -253,9 +325,9 @@ body {
     margin-top: 15px;
     padding: 15px;
 
-    background: #121420;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.05);
+    background: #130c10;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 
     text-align: left;
 }
@@ -277,19 +349,19 @@ body {
     justify-content: space-between;
 
     padding: 8px 10px;
-    background: #1a1d2b;
-    border-radius: 10px;
+    background: #201419;
+    border-radius: 9px;
 
     font-size: 13px;
 }
 
 .player {
-    color: #cfd3ff;
+    color: #e0d7ff;
     font-weight: 600;
 }
 
 .stage {
-    color: #8b90a8;
+    color: #c0aeb7;
 }
 
 .nav {
@@ -306,7 +378,8 @@ body {
     height: 3px;
     width: 60px;
 
-    background: #5865f2;
+    background: #f25858;
+    opacity: 0.8;
     border-radius: 10px;
 
     transition: transform 0.3s ease, width 0.3s ease;
@@ -314,12 +387,12 @@ body {
 
 .nav-btn {
     padding: 8px 12px;
-    border-radius: 10px;
+    border-radius: 9px;
 
     font-size: 13px;
     font-weight: 600;
 
-    color: #cfd3ff;
+    color: #fff5f5;
     text-decoration: none;
 
     background: transparent;
@@ -330,8 +403,8 @@ body {
 }
 
 .nav-btn:hover {
-    background: rgba(88, 101, 242, 0.12);
-    border-color: rgba(88, 101, 242, 0.35);
+    background: rgba(242, 88, 88, 0.12);
+    border-color: rgba(242, 88, 88, 0.35);
     color: white;
     transform: translateY(-1px);
 }
@@ -341,7 +414,7 @@ body {
 }
 
 #player-list .level {
-    background: linear-gradient(145deg, #191c2b, #141724);
+    background: #1b1217;
 }
 
 #player-list .rank {
@@ -365,7 +438,7 @@ body {
     width: 80px;
     height: 3px;
 
-    background: #5865f2;
+    background: #f25858;
     border-radius: 10px;
 
     opacity: 0.8;
@@ -391,20 +464,20 @@ body {
     border-radius: 2px;
     vertical-align: middle;
 
-    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
 .player-tooltip {
     position: absolute;
-    background: #121420;
-    border: 1px solid rgba(255,255,255,0.08);
+    background: #130c10;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
 
     padding: 10px 12px;
     font-size: 12px;
     color: #cfd3ff;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     z-index: 999;
 
     display: none;
@@ -427,7 +500,7 @@ body {
     width: 36px;
     height: 36px;
 
-    border-radius: 10px;
+    border-radius: 9px;
 
     object-fit: cover;
 
@@ -439,4 +512,53 @@ body {
 
 .level-icon:hover {
     transform: scale(1.05);
+}
+
+.controls {
+    max-width: 950px;
+    margin: 10px auto 20px;
+
+    display: flex;
+    gap: 10px;
+}
+
+#search, #tag-filter {
+    flex: 1;
+
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: #130c10;
+    color: white;
+    font-family: inherit;
+
+    outline: none;
+}
+
+#search:focus, #tag-filter:focus {
+    border-color: rgba(88,101,242,0.6);
+}
+
+.level-tags {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+
+    z-index: 3;
+}
+
+.level-tag {
+    font-size: 10px;
+    padding: 3px 7px;
+
+    border-radius: 999px;
+    background: rgba(242, 88, 88, 0.25);
+    border: 1px solid rgba(88, 101, 242, 0.4);
+
+    color: #d6dbff;
 }

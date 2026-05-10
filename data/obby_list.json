@@ -1,37 +1,427 @@
 {
     "Toothpaste Ideology": {
         "verifier": "Kai",
-        "points": 1000,
         "link": "https://polytoria.com/places/98752",
-        "poc_diff": {
-            "diff": 1.9,
-            "lm_diff": 2.0,
-            "time": 1.3
-        },
+        "rung_diff": 15.40,
         "progress": {
-            "TestPlayer1": "Last Jump"
+
         },
         "description": "Jank, Long wraps & jumps",
         "length": "Average",
         "creators": "Kai",
-        "verification": "https://youtu.be/lATSnaWxIYA"
+        "verification": "https://youtu.be/lATSnaWxIYA",
+        "tags": ["Top 1"]
     },
 
     "Toothpaste Ideology - Nerfed": {
         "verifier": "Kai",
-        "points": 900,
         "link": "https://polytoria.com/places/98752",
-        "poc_diff": {
-            "diff": 1.7,
-            "lm_diff": 1.8,
-            "time": 0.9
-        },
+        "rung_diff": 13.50,
         "progress": {
-            "TestPlayer2": "Last Jump"
+
         },
         "description": "Jank, Long wraps & jumps",
         "length": "Average",
         "creators": "Kai & Ananasorma",
-        "verification": "https://youtu.be/pKdBnH4iWKY"
+        "verification": "https://youtu.be/pKdBnH4iWKY",
+        "tags": []
+    },
+
+    "Tower of Treachery: Limit": {
+        "verifier": "Kai",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 13.50,
+        "progress": {
+
+        },
+        "length": "Long",
+        "creators": "TheRevivedSpirit",
+        "description": "Reaching the long jump at floor 3",
+        "verification": "https://www.youtube.com/watch?v=Zs3lVYM3QQY",
+        "tags": ["Tower"]
+    },
+
+    "Tower of Pure Malice": {
+        "verifier": "Kai",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 13.25,
+        "progress": {
+
+        },
+        "length": "Long",
+        "creators": "TheRevivedSpirit",
+        "description": "Long jumps, wraps & wallhops",
+        "verification": "https://www.youtube.com/watch?v=v4wNS_YbaMM",
+        "tags": ["Tower", "Tower Top 1"]
+    },
+
+    "Edifice of Woven Pain": {
+        "verifier": "Robo",
+        "link": "https://polytoria.com/places/106580",
+        "rung_diff": 10.80,
+        "progress": {
+
+        },
+        "length": "Average",
+        "creators": "Yeetus26",
+        "description": "Chokepoints, squeezes, wiggles, some longjumps",
+        "verification": "https://www.youtube.com/watch?v=CPaiA4TcYQs",
+        "tags": []
+    },
+
+    "Tower of Ice": {
+        "verifier": "TheRevivedSpirit",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 10.60,
+        "progress": {
+
+        },
+        "length": "Long",
+        "creators": "TheRevivedSpirit & PYEKing",
+        "description": "Long jumps, wraps & headhitters",
+        "verification": "https://www.youtube.com/watch?v=kjkIEJ05saI",
+        "tags": ["Tower", "Former Top 1"]
+    },
+    
+    "Tower of Treachery: Floor 1": {
+        "verifier": "Zimroy",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 10.40,
+        "progress": {
+
+        },
+        "length": "Long",
+        "creators": "TheRevivedSpirit",
+        "description": "Reaching floor 2 fully legit",
+        "verification": "https://www.youtube.com/watch?v=kjkIEJ05saI",
+        "tags": ["Tower", "Former Top 1"]
+    },
+
+    "Purple Obby": {
+        "verifier": "Kai",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 10.00,
+        "progress": {
+
+        },
+        "length": "Short",
+        "creators": "GROSTIMBIT",
+        "description": "Thin parts, Long jumps & squeezes.",
+        "verification": "https://youtu.be/5gs2nDjkhD4",
+        "tags": []
+    },
+
+    "Waiting for you...": {
+        "verifier": "Dact",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 9.60,
+        "progress": {
+
+        },
+        "length": "Short",
+        "creators": "Dact",
+        "description": "Thin parts, wraps & squeezes.",
+        "verification": "https://www.youtube.com/watch?v=X6U3evLPqHg",
+        "tags": []
+    },
+
+    "Teeny Tiny Gaps": {
+        "verifier": "huurduurbuur",
+        "link": "https://polytoria.com/places/60196",
+        "rung_diff": 8.50,
+        "progress": {
+
+        },
+        "length": "Average",
+        "creators": "huurduurbuur",
+        "description": "Squeezes, stickouts & long jumps",
+        "verification": "https://www.youtube.com/watch?v=_TWpZYG6crQ",
+        "tags": []
+    },
+
+    "Monolith": {
+        "verifier": "phoe",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 8.40,
+        "progress": {
+
+        },
+        "length": "Very Short",
+        "creators": "phoe",
+        "description": "Timed, Squeezes & Long jumps",
+        "verification": "https://youtu.be/RJr-01kAgjQ",
+        "tags": ["Timed"]
+    },
+
+    "mentacap's first hard polytoria obby": {
+        "verifier": "Mentacap",
+        "link": "https://polytoria.com/places/60196",
+        "rung_diff": 7.50,
+        "progress": {
+
+        },
+        "length": "Very Short",
+        "creators": "GROSTIMBIT",
+        "description": "Squeezes, trusses & long jumps",
+        "verification": "https://youtu.be/OKLnSKyyLsM",
+        "tags": []
+    },
+
+    "Batteries Not Included": {
+        "verifier": "Sydney",
+        "link": "https://polytoria.com/places/93021",
+        "rung_diff": 7.30,
+        "progress": {
+
+        },
+        "length": "Average",
+        "creators": "GROSTIMBIT",
+        "description": "Reaching floor 2 fully legit",
+        "verification": "https://youtu.be/kPRRVZ9dM9w",
+        "tags": []
+    },
+
+    "Polytoric Hell": {
+        "verifier": "aremiajtoh",
+        "link": "https://polytoria.com/places/95207",
+        "rung_diff": 6.00,
+        "progress": {
+
+        },
+        "length": "Short",
+        "creators": "aremiajtoh",
+        "description": "Squeezes, stickouts & long jumps",
+        "verification": "No video available.",
+        "tags": []
+    },
+
+    "High Alignment Society": {
+        "verifier": "Sydney",
+        "link": "https://polytoria.com/places/95207",
+        "rung_diff": 5.75,
+        "progress": {
+
+        },
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Glitchtech Obby.",
+        "verification": "https://www.youtube.com/watch?v=ul5BeF75P6Y",
+        "tags": []
+    },
+
+    "Tower of Intermediate Jumps": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/95207",
+        "rung_diff": 5.00,
+        "progress": {},
+        "length": "Long",
+        "creators": "huurduurbuur",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Tower"]
+    },
+
+    "Cosmic Graveyard": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/12661",
+        "rung_diff": 3.50,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Polytoria Difficulty Chart": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/6602",
+        "rung_diff": 3.40,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Stage based.",
+        "verification": "No video available.",
+        "tags": []
+    },
+
+    "Climb The Mountain": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/92567",
+        "rung_diff": 3.30,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": []
+    },
+
+    "Pyramid": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 3.25,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Skull Sinkhole": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 3.10,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Glowing Mushrooms": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 2.95,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Acid Environments": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 2.80,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Ancient Tomb": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/12661",
+        "rung_diff": 2.65,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "I Wanna Play The Obby!": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/9470",
+        "rung_diff": 2.55,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": []
+    },
+
+    "Jungle": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 2.50,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Lighthouse": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 2.40,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "FE HQ": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 2.30,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Toxic Sewers": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/12661",
+        "rung_diff": 2.20,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Tower of Heck": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/10694",
+        "rung_diff": 2.10,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Tower", "Easiest Tower"]
+    },
+
+    "SECTOR-12": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/1075",
+        "rung_diff": 2.00,
+        "progress": {},
+        "length": "Short",
+        "creators": "cya",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Frosty Cavern": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/12661",
+        "rung_diff": 1.95,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
+    },
+
+    "Pirate Bay": {
+        "verifier": "N/A",
+        "link": "https://polytoria.com/places/12661",
+        "rung_diff": 1.90,
+        "progress": {},
+        "length": "Short",
+        "creators": "phoe",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Timed"]
     }
 }

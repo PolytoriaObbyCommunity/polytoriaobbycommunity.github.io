@@ -41,6 +41,15 @@
 
                 <div class="title-underline"></div>
             </h1>
+
+            <div class="controls">
+                <input id="search" type="text" placeholder="Search levels..." oninput="setSearch(this.value)">
+
+                <select id="tag-filter" onchange="setTag(this.value)">
+                    <option value="all">All Tags</option>
+                </select>
+            </div>
+
             <div id="list"></div>
         </div>
 

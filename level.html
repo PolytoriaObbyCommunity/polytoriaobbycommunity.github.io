@@ -65,6 +65,27 @@
         return `https://www.youtube.com/embed/${match[1]}`;
     }
 
+    function calculatePoints(levelName, data) {
+        const levels = Object.keys(data);
+
+        const maxPoints = 1000;
+        const minPoints = 100;
+
+        const index = levels.indexOf(levelName);
+
+        if (index === -1) return minPoints;
+
+        const total = levels.length - 1;
+
+        if (total <= 0) return maxPoints;
+
+        const points = maxPoints - (
+            (index / total) * (maxPoints - minPoints)
+        );
+
+        return Math.round(points);
+    }
+
     async function loadLevel() {
         const params = new URLSearchParams(window.location.search);
         const levelName = decodeURIComponent(params.get("level"));
@@ -78,7 +99,11 @@
 
         const container = document.getElementById("level-container");
 
-        const videoEmbed = getYouTubeEmbed(level.verification);
+        let videoEmbed = null;
+
+        if (level.verification !== "No video available.") {
+            videoEmbed = getYouTubeEmbed(level.verification);
+        }
 
         container.innerHTML = `
             <h1 class="page-title">${levelName}</h1>
@@ -93,15 +118,19 @@
                         <div class="video-container">
                             <iframe src="${videoEmbed}" frameborder="0" allowfullscreen></iframe>
                         </div>
-                    ` : ""}
+                    ` : `
+                        <i>No video available.</i>
+                    `}
 
                     <p>${level.description}</p>
 
                     <div class="meta-box">
                         <div><b>Creator:</b> ${level.creators}</div>
                         <div><b>Verifier:</b> ${level.verifier}</div>
-                        <div><b>Points:</b> ${level.points}</div>
+                        <div><b>Points:</b> ${calculatePoints(levelName, data)}</div>
                         <div><b>Length:</b> ${level.length}</div>
+                        <div><b>Difficulty (Rung):</b> ${level.rung_diff}</div>
+                        <div><b>Tags:</b> ${level.tags.map(tag => `<span class="tag">${tag}</span>`).join(", ")}</div>
                     </div>
 
                     ${level.progress ? `
