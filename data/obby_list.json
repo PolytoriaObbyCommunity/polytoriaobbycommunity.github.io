@@ -79,7 +79,7 @@
         "length": "Average",
         "creators": "cherrypizzasquad",
         "description": "Thin parts, Wraps, Long jumps & squeezes.",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Mint series"]
     },
 
@@ -177,7 +177,7 @@
         "length": "Short",
         "creators": "cherrypizzasquad",
         "description": "No description available.",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Mint series"]
     },
 
@@ -219,7 +219,7 @@
         "length": "Short",
         "creators": "aremiajtoh",
         "description": "Squeezes, stickouts & long jumps",
-        "verification": "No video available.",
+        "verification": null,
         "tags": []
     },
 
@@ -247,7 +247,7 @@
         "length": "Very Short",
         "creators": "cherrypizzasquad",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Mint series"]
     },
 
@@ -273,7 +273,7 @@
         "length": "Long",
         "creators": "huurduurbuur",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Tower"]
     },
 
@@ -285,7 +285,7 @@
         "length": "Short",
         "creators": "A73",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": []
     },
 
@@ -299,7 +299,7 @@
         "length": "Very Short",
         "creators": "cherrypizzasquad",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Mint series"]
     },
 
@@ -311,7 +311,7 @@
         "length": "Short",
         "creators": "phoe",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -323,7 +323,7 @@
         "length": "Short",
         "creators": "Deeco",
         "description": "Stage based.",
-        "verification": "No video available.",
+        "verification": null,
         "tags": []
     },
 
@@ -335,7 +335,7 @@
         "length": "Short",
         "creators": "Wraft",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": []
     },
 
@@ -347,7 +347,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -359,7 +359,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -371,7 +371,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -383,7 +383,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -395,7 +395,7 @@
         "length": "Short",
         "creators": "phoe",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -407,7 +407,7 @@
         "length": "Short",
         "creators": "phoe",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": []
     },
 
@@ -419,7 +419,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -431,7 +431,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -443,7 +443,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -455,7 +455,7 @@
         "length": "Short",
         "creators": "phoe",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -467,7 +467,7 @@
         "length": "Short",
         "creators": "phoe",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Tower", "Easiest Tower"]
     },
 
@@ -479,7 +479,7 @@
         "length": "Short",
         "creators": "cya",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -491,7 +491,7 @@
         "length": "Short",
         "creators": "phoe",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -503,7 +503,7 @@
         "length": "Short",
         "creators": "phoe",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Timed"]
     },
 
@@ -517,7 +517,7 @@
         "length": "Very Short",
         "creators": "cherrypizzasquad",
         "description": "Easy",
-        "verification": "No video available.",
+        "verification": null,
         "tags": ["Mint series"]
     }
 }

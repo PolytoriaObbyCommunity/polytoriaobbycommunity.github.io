@@ -102,7 +102,7 @@
 
         let videoEmbed = null;
 
-        if (!isUnverified && level.verification !== "No video available.") {
+        if (!isUnverified && level.verification !== null) {
             videoEmbed = getYouTubeEmbed(level.verification);
         }
 
