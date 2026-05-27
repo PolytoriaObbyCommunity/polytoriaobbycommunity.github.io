@@ -103,7 +103,7 @@ function calculatePlayerPoints(playerData) {
     });
 
     playerData.wins.forEach(level => {
-        total += Math.floor(getLevelPoints(level) * 0.25);
+        total += Math.floor(getLevelPoints(level));
     });
 
     return total;
