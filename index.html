@@ -50,6 +50,24 @@
                 </select>
             </div>
 
+            <div class="list-switcher">
+                <button class="list-btn active" onclick="setListType('main', this)">
+                    Main List
+                </button>
+
+                <button class="list-btn" onclick="setListType('extended', this)">
+                    Extended List
+                </button>
+
+                <button class="list-btn" onclick="setListType('legacy', this)">
+                    Legacy List
+                </button>
+
+                <button class="list-btn" onclick="setListType('unverified', this)">
+                    Unverified List
+                </button>
+            </div>
+
             <div id="list"></div>
         </div>
 

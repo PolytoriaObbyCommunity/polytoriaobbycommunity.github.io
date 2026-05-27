@@ -95,20 +95,20 @@ body {
 
     margin-bottom: 12px;
     padding: 14px;
-    border-radius: 12px;
+    border-radius: 8px;
 
     transition: 0.2s ease;
     cursor: pointer;
 
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255,255,255,0.08);
     background: #1a1115;
 }
 
 .level:hover {
-    border-color: rgba(88, 101, 242, 0.45);
+    border-color: #f25858;
     box-shadow: 0 10px 30px rgba(20, 0, 8, 0.42);
     transform: translateY(-2px);
-    text-shadow: 0 0 8px rgba(255, 136, 136, 0.623);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.205);
 }
 
 .level::before {
@@ -290,7 +290,7 @@ body {
     width: 100%;
     max-width: 650px;
     height: 360px;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .meta-box {
@@ -302,7 +302,7 @@ body {
     padding: 12px;
 
     background: #130c10;
-    border-radius: 12px;
+    border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.05);
 
     font-size: 13px;
@@ -326,7 +326,7 @@ body {
     padding: 15px;
 
     background: #130c10;
-    border-radius: 12px;
+    border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.05);
 
     text-align: left;
@@ -471,7 +471,7 @@ body {
     position: absolute;
     background: #130c10;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
+    border-radius: 8px;
 
     padding: 10px 12px;
     font-size: 12px;
@@ -561,4 +561,41 @@ body {
     border: 1px solid rgba(88, 101, 242, 0.4);
 
     color: #d6dbff;
+}
+
+.list-switcher {
+    max-width: 950px;
+    margin: 0 auto 18px;
+
+    display: flex;
+    gap: 8px;
+}
+
+.list-btn {
+    background: #1a1115;
+    color: #f0e9ec;
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 5px;
+
+    padding: 10px 14px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.15s ease;
+}
+
+.list-btn:hover {
+    background: #24161b;
+    border-color: rgba(242, 88, 88, 0.4);
+}
+
+.list-btn.active {
+    background: #f25858;
+    color: white;
+    border-color: #f25858;
 }

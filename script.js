@@ -7,6 +7,11 @@
 
 let searchQuery = "";
 let selectedTag = "all";
+let currentListType = "main";
+let unverifiedList = [];
+let obbyList = [];
+let playerList = [];
+let isUnverified = false;
 
 function showTab(tabId) {
     document.querySelectorAll(".tab").forEach(tab => {
@@ -49,11 +54,21 @@ function setTag(value) {
     renderList();
 }
 
+function setListType(type, button) {
+    currentListType = type;
+
+    document.querySelectorAll(".list-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    renderList();
+}
+
 const tooltip = document.createElement("div");
 tooltip.className = "player-tooltip";
 document.body.appendChild(tooltip);
-
-let obbyList = [];
 
 function calculatePointsByIndex(index, totalLevels) {
     const maxPoints = 1000;
@@ -137,20 +152,39 @@ function populateTags() {
 }
 
 async function loadData() {
-    const res = await fetch("data/obby_list.json");
-    const data = await res.json();
+    const [obbyRes, unverifiedRes] = await Promise.all([
+        fetch("data/obby_list.json"),
+        fetch("data/unverified_list.json")
+    ]);
 
-    obbyList = Object.entries(data);
+    const obbyData = await obbyRes.json();
+    const unverifiedData = await unverifiedRes.json();
+
+    obbyList = Object.entries(obbyData);
+    unverifiedList = Object.entries(unverifiedData);
+
     populateTags();
     renderList();
 }
+
+// now it renders multiple lists!
 
 function renderList() {
     const container = document.getElementById("list");
     container.innerHTML = "";
 
-    const filtered = obbyList.filter(([name, level]) => {
-        const matchesSearch = name.toLowerCase().includes(searchQuery.toLowerCase());
+    let dataSource;
+    let isUnverified = currentListType === "unverified";
+
+    if (isUnverified) {
+        dataSource = unverifiedList;
+    } else {
+        dataSource = obbyList;
+    }
+
+    let filtered = dataSource.filter(([name, level]) => {
+        const matchesSearch =
+            name.toLowerCase().includes(searchQuery);
 
         const matchesTag =
             selectedTag === "all" ||
@@ -159,9 +193,23 @@ function renderList() {
         return matchesSearch && matchesTag;
     });
 
+    if (!isUnverified) {
+        filtered = filtered.filter(([name]) => {
+            const rank = obbyList.findIndex(x => x[0] === name) + 1;
+
+            if (currentListType === "main") return rank <= 10;
+            if (currentListType === "extended") return rank >= 11 && rank <= 25;
+            if (currentListType === "legacy") return rank >= 26;
+
+            return true;
+        });
+    }
+
     filtered.forEach(([name, level], i) => {
-        const realIndex = obbyList.findIndex(x => x[0] === name);
-        const rank = realIndex + 1;
+        const rank = isUnverified
+            ? i + 1
+            : obbyList.findIndex(x => x[0] === name) + 1;
+
         const rankClass =
             rank === 1 ? "rank gold" :
             rank === 2 ? "rank silver" :
@@ -184,14 +232,19 @@ function renderList() {
                 <div class="desc">${level.description}</div>
 
                 <div class="meta">
-                    <span><img src="data/icons/user.svg"> ${level.creators}</span>
-                    <span><img src="data/icons/star.svg"> ${getLevelPoints(name)}</span>
+                    ${!isUnverified ? `
+                        <span><img src="data/icons/user.svg"> ${level.creators}</span>
+                        <span><img src="data/icons/star.svg"> ${getLevelPoints(name)}</span>
+                    ` : ""}
+
                     <span><img src="data/icons/clock.svg"> ${level.length}</span>
                 </div>
 
                 ${level.tags ? `
                     <div class="level-tags">
-                        ${level.tags.map(tag => `<span class="level-tag">${tag}</span>`).join("")}
+                        ${level.tags.map(tag =>
+                            `<span class="level-tag">${tag}</span>`
+                        ).join("")}
                     </div>
                 ` : ""}
             </div>
@@ -206,7 +259,8 @@ function renderList() {
 
         div.onclick = (e) => {
             if (!e.target.closest(".play")) {
-                window.location.href = `level.html?level=${encodedName}`;
+                window.location.href =
+                    `level.html?level=${encodedName}&list=${currentListType}`;
             }
         };
 
@@ -226,8 +280,6 @@ function loadFromHash() {
 
 window.addEventListener("DOMContentLoaded", loadFromHash);
 window.addEventListener("hashchange", loadFromHash);
-
-let playerList = [];
 
 async function loadPlayers() {
     const res = await fetch("data/player_list.json");
