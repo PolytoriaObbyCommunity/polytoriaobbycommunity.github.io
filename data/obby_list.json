@@ -55,6 +55,34 @@
         "tags": ["Tower", "Tower Top 1"]
     },
 
+    "Tower of Treachery: Floor 1": {
+        "verifier": "Zimroy",
+        "link": "https://polytoria.com/places/14049",
+        "rung_diff": 11.15,
+        "progress": {
+
+        },
+        "length": "Long",
+        "creators": "TheRevivedSpirit",
+        "description": "Reaching floor 2 fully legit",
+        "verification": "https://www.youtube.com/watch?v=kjkIEJ05saI",
+        "tags": ["Tower", "Former Top 1"]
+    },
+
+    "Not Mint to Be": {
+        "verifier": "cherrypizzasquad",
+        "link": "https://polytoria.com/places/114815",
+        "rung_diff": 11.05,
+        "progress": {
+
+        },
+        "length": "Average",
+        "creators": "cherrypizzasquad",
+        "description": "Thin parts, Wraps, Long jumps & squeezes.",
+        "verification": "No video available.",
+        "tags": ["Mint series"]
+    },
+
     "Edifice of Woven Pain": {
         "verifier": "Robo",
         "link": "https://polytoria.com/places/106580",
@@ -79,20 +107,6 @@
         "length": "Long",
         "creators": "TheRevivedSpirit & PYEKing",
         "description": "Long jumps, wraps & headhitters",
-        "verification": "https://www.youtube.com/watch?v=kjkIEJ05saI",
-        "tags": ["Tower", "Former Top 1"]
-    },
-    
-    "Tower of Treachery: Floor 1": {
-        "verifier": "Zimroy",
-        "link": "https://polytoria.com/places/14049",
-        "rung_diff": 10.40,
-        "progress": {
-
-        },
-        "length": "Long",
-        "creators": "TheRevivedSpirit",
-        "description": "Reaching floor 2 fully legit",
         "verification": "https://www.youtube.com/watch?v=kjkIEJ05saI",
         "tags": ["Tower", "Former Top 1"]
     },
@@ -152,6 +166,20 @@
         "verification": "https://youtu.be/RJr-01kAgjQ",
         "tags": ["Timed"]
     },
+    
+    "Stonescape": {
+        "verifier": "cherrypizzasquad",
+        "link": "https://polytoria.com/places/114815",
+        "rung_diff": 11.05,
+        "progress": {
+
+        },
+        "length": "Short",
+        "creators": "cherrypizzasquad",
+        "description": "No description available.",
+        "verification": "No video available.",
+        "tags": ["Mint series"]
+    },
 
     "mentacap's first hard polytoria obby": {
         "verifier": "Mentacap",
@@ -209,8 +237,36 @@
         "tags": []
     },
 
+    "Minted Dreams": {
+        "verifier": "cherrypizzasquad",
+        "link": "https://polytoria.com/places/114816",
+        "rung_diff": 5.50,
+        "progress": {
+
+        },
+        "length": "Very Short",
+        "creators": "cherrypizzasquad",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Mint series"]
+    },
+
+    "Another Place": {
+        "verifier": "FatglueRuslan",
+        "link": "https://polytoria.com/places/124702",
+        "rung_diff": 5.40,
+        "progress": {
+
+        },
+        "length": "Short",
+        "creators": "FatglueRuslan",
+        "description": "Wraps, tilted platforms & headhitters.",
+        "verification": "https://www.youtube.com/watch?v=LhNqi1f244c",
+        "tags": []
+    },
+
     "Tower of Intermediate Jumps": {
-        "verifier": "N/A",
+        "verifier": "huurduurbuur",
         "link": "https://polytoria.com/places/95207",
         "rung_diff": 5.00,
         "progress": {},
@@ -219,6 +275,32 @@
         "description": "Easy",
         "verification": "No video available.",
         "tags": ["Tower"]
+    },
+
+    "Frozen Desert": {
+        "verifier": "A73",
+        "link": "https://polytoria.com/places/113536",
+        "rung_diff": 4.70,
+        "progress": {},
+        "length": "Short",
+        "creators": "A73",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": []
+    },
+
+    "Minted Horizons": {
+        "verifier": "cherrypizzasquad",
+        "link": "https://polytoria.com/places/114816",
+        "rung_diff": 3.65,
+        "progress": {
+
+        },
+        "length": "Very Short",
+        "creators": "cherrypizzasquad",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Mint series"]
     },
 
     "Cosmic Graveyard": {
@@ -423,5 +505,19 @@
         "description": "Easy",
         "verification": "No video available.",
         "tags": ["Timed"]
+    },
+
+    "A breath of fresh air": {
+        "verifier": "cherrypizzasquad",
+        "link": "https://polytoria.com/places/114816",
+        "rung_diff": 5.50,
+        "progress": {
+
+        },
+        "length": "Very Short",
+        "creators": "cherrypizzasquad",
+        "description": "Easy",
+        "verification": "No video available.",
+        "tags": ["Mint series"]
     }
 }
