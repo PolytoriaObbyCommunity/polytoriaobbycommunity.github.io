@@ -98,11 +98,11 @@ function getLevelPoints(levelName) {
 function calculatePlayerPoints(playerData) {
     let total = 0;
 
-    playerData.verifications.forEach(level => {
+    (playerData.verifications || []).forEach(level => {
         total += getLevelPoints(level);
     });
 
-    playerData.wins.forEach(level => {
+    (playerData.wins || []).forEach(level => {
         total += Math.floor(getLevelPoints(level));
     });
 
@@ -111,8 +111,8 @@ function calculatePlayerPoints(playerData) {
 
 function getHardestLevel(playerData) {
     const allLevels = [
-        ...playerData.verifications,
-        ...playerData.wins
+        ...(playerData.verifications || []),
+        ...(playerData.wins || [])
     ];
 
     let bestLevel = null;
@@ -333,7 +333,7 @@ function renderPlayers() {
 
                 <div class="meta">
                     <span><img src="data/icons/star.svg"> ${data.points} pts</span>
-                    <span><img src="data/icons/verify.svg"> ${data.verifications.length} verifications</span>
+                    <span><img src="data/icons/verify.svg"> ${(data.verifications || []).length} verifications</span>
                     <span><img src="data/icons/user.svg"> ${data.wins.length} wins</span>
                 </div>
             </div>
@@ -347,7 +347,7 @@ function renderPlayers() {
             tooltip.innerHTML = `
                 <b>${name}</b>
                 <div><strong>Verifications:</strong><br>
-                    ${data.verifications.join("<br>")}
+                    ${(data.verifications || []).join("<br>") || "None"}
                 </div>
                 <br>
                 <div><strong>Wins:</strong><br>
