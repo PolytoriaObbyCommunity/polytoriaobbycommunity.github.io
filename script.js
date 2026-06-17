@@ -12,6 +12,15 @@ let unverifiedList = [];
 let obbyList = [];
 let playerList = [];
 let isUnverified = false;
+let maxRung = 15.40;
+
+function updateMaxRung() {
+    maxRung = Math.max(
+        ...obbyList.map(([_, level]) => parseFloat(level.rung_diff))
+    );
+
+    if (maxRung < 2) maxRung = 2;
+}
 
 function showTab(tabId) {
     document.querySelectorAll(".tab").forEach(tab => {
@@ -70,29 +79,37 @@ const tooltip = document.createElement("div");
 tooltip.className = "player-tooltip";
 document.body.appendChild(tooltip);
 
-function calculatePointsByIndex(index, totalLevels) {
-    const maxPoints = 1000;
+function calculatePointsByRung(rung) {
     const minPoints = 100;
+    const maxPoints = 1000;
 
-    if (totalLevels <= 1) return maxPoints;
 
-    const points = maxPoints - (
-        (index / (totalLevels - 1)) * (maxPoints - minPoints)
-    );
 
-    return Math.round(points);
+    if (maxRung <= 1) return minPoints;
+    // theoretically quadratic curve
+    let t = (rung - 1) / (maxRung - 1);
+    t = Math.min(1, Math.max(0, t));
+    
+    t = t * t;
+    
+    return Math.round(minPoints + t * (maxPoints - minPoints));
+
+    // I'm not sure if this would be a good curve. You might want to test it first.
 }
 
 function getLevelRank(levelName) {
-    return obbyList.findIndex(([name]) => name === levelName) + 1;
+    const i = obbyList.findIndex(([name]) => name === levelName);
+    return i === -1 ? Infinity : i + 1;
 }
 
 function getLevelPoints(levelName) {
-    const index = obbyList.findIndex(([name]) => name === levelName);
+    const level = obbyList.find(([name]) => name === levelName);
 
-    if (index === -1) return 0;
+    if (!level) return 0;
 
-    return calculatePointsByIndex(index, obbyList.length);
+    return calculatePointsByRung(
+        parseFloat(level[1].rung_diff)
+    );
 }
 
 function calculatePlayerPoints(playerData) {
@@ -164,6 +181,7 @@ async function loadData() {
     unverifiedList = Object.entries(unverifiedData);
 
     populateTags();
+    updateMaxRung();
     renderList();
 }
 
@@ -334,7 +352,7 @@ function renderPlayers() {
                 <div class="meta">
                     <span><img src="data/icons/star.svg"> ${data.points} pts</span>
                     <span><img src="data/icons/verify.svg"> ${(data.verifications || []).length} verifications</span>
-                    <span><img src="data/icons/user.svg"> ${data.wins.length} wins</span>
+                    <span><img src="data/icons/user.svg"> ${(data.wins || []).length} wins</span>
                 </div>
             </div>
         `;
@@ -351,7 +369,7 @@ function renderPlayers() {
                 </div>
                 <br>
                 <div><strong>Wins:</strong><br>
-                    ${data.wins.join("<br>")}
+                    ${(data.wins || []).join("<br>")}
                 </div>
             `;
         });
