@@ -5,16 +5,16 @@
         "wins": ["Batteries Not Included", "mentacap's first hard polytoria obby", "Waiting for you...", "Tower of Treachery: Floor 1"]
     },
 
-    "huurduurbuur": {
+    "Huurduurbuur": {
         "flag": "us",
         "verifications": ["Teeny Tiny Gaps", "Tower of Intermediate Jumps"],
         "wins": ["Edifice of Woven Pain", "Tower of Treachery: Floor 1", "Cosmic Graveyard", "High Alignment Society", "Tower of Ice", "Purple Obby", "Monolith", "mentacap's first hard polytoria obby", "Batteries Not Included", "Polytoric Hell", "Tower of Intermediate Jumps", "Climb The Mountain", "Another Place", "Ancient Tomb", "Frosty Cavern", "Toxic Sewers", "Pirate Bay"]
     },
 
-    "cherrypizzasquad": {
+    "Cherrypizzadude": {
         "flag": "us",
         "verifications": ["Stonescape", "Minted Dreams", "Not Mint to Be", "A breath of fresh air"],
-        "wins": ["Edifice of Woven Pain", "Waiting for you...", "Teeny Tiny Gaps", "Monolith", "mentacap's first hard polytoria obby", "Polytoric Hell", "Tower of Intermediate Jumps", "Another Place", "Cosmic Graveyard", "Polytoria Difficulty Chart", "Ancient Tomb", "Frosty Cavern", "Toxic Sewers", "Pirate Bay", "Jungle", "FE HQ", "Skull Sinkhole", "Pyramid"]
+        "wins": ["Edifice of Woven Pain", "Waiting for you...", "Teeny Tiny Gaps", "Monolith", "mentacap's first hard polytoria obby", "Polytoric Hell", "Tower of Intermediate Jumps", "Another Place", "Cosmic Graveyard", "Polytoria Difficulty Chart", "Ancient Tomb", "Frosty Cavern", "Toxic Sewers", "Pirate Bay", "Jungle", "FE HQ", "Skull Sinkhole", "Pyramid", "Frozen Desert"]
     },
 
     "Jonafin": {
@@ -26,7 +26,7 @@
     "Sunken": {
         "flag": "fi", 
         "verifications": null,
-        "wins": ["Monolith", "Cosmic Graveyard", "Polytoria Difficulty Chart", "Ancient Tomb", "Toxic Sewers", "Frosty Cavern", "Pirate Bay"]
+        "wins": ["Monolith", "Cosmic Graveyard", "Polytoria Difficulty Chart", "Ancient Tomb", "Toxic Sewers", "Frosty Cavern", "Pirate Bay", "I Wanna Play The Obby!", "Frozen Desert", "A breath of fresh air", "Tower of Intermediate Jumps", "Minted Horizons", "Minted Dreams", "Tower of Heck", "FE HQ", "Pyramid", "Skull Sinkhole", "Glowing Mushrooms", "Acid Environments", "Jungle", "Lighthouse", "SECTOR-12"]
     },
 
     "CatLizard": {
