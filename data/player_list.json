@@ -8,12 +8,30 @@
     "huurduurbuur": {
         "flag": "us",
         "verifications": ["Teeny Tiny Gaps", "Tower of Intermediate Jumps"],
-        "wins": ["Edifice of Woven Pain", "Tower of Treachery: Floor 1", "Cosmic Graveyard", "High Alignment Society", "Tower of Ice", "Purple Obby", "Monolith", "mentacap's first hard polytoria obby", "Batteries Not Included", "Polytoric Hell", "Tower of Intermediate Jumps", "Climb The Mountain", "Another Place"]
+        "wins": ["Edifice of Woven Pain", "Tower of Treachery: Floor 1", "Cosmic Graveyard", "High Alignment Society", "Tower of Ice", "Purple Obby", "Monolith", "mentacap's first hard polytoria obby", "Batteries Not Included", "Polytoric Hell", "Tower of Intermediate Jumps", "Climb The Mountain", "Another Place", "Ancient Tomb", "Frosty Cavern", "Toxic Sewers", "Pirate Bay"]
     },
 
     "cherrypizzasquad": {
         "flag": "us",
-        "verifications": ["Stonescape", "Minted Dreams", "Not Mint to Be"],
-        "wins": ["Edifice of Woven Pain", "Waiting for you...", "Teeny Tiny Gaps", "mentacap's first hard polytoria obby", "Tower of Intermediate Jumps", "Another Place"]
+        "verifications": ["Stonescape", "Minted Dreams", "Not Mint to Be", "A breath of fresh air"],
+        "wins": ["Edifice of Woven Pain", "Waiting for you...", "Teeny Tiny Gaps", "Monolith", "mentacap's first hard polytoria obby", "Polytoric Hell", "Tower of Intermediate Jumps", "Another Place", "Cosmic Graveyard", "Polytoria Difficulty Chart", "Ancient Tomb", "Frosty Cavern", "Toxic Sewers", "Pirate Bay", "Jungle", "FE HQ", "Skull Sinkhole", "Pyramid"]
+    },
+
+    "Jonafin": {
+        "flag": "us",
+        "verifications": null,
+        "wins": ["Edifice of Woven Pain", "Purple Obby", "Monolith", "Polytoric Hell", "Minted Dreams", "Tower of Intermediate Jumps", "Another Place", "Cosmic Graveyard", "Frozen Desert", "Minted Horizons", "Polytoria Difficulty Chart", "Climb The Mountain", "Ancient Tomb", "Toxic Sewers", "Pirate Bay", "Frosty Cavern", "SECTOR-12", "FE HQ", "Lighthouse", "Jungle", "Glowing Mushrooms", "Skull Sinkhole", "Pyramid", "A breath of fresh air"]
+    },
+
+    "Sunken": {
+        "flag": "fi", 
+        "verifications": null,
+        "wins": ["Monolith", "Cosmic Graveyard", "Polytoria Difficulty Chart", "Ancient Tomb", "Toxic Sewers", "Frosty Cavern", "Pirate Bay"]
+    },
+
+    "CatLizard": {
+        "flag": "gb", 
+        "verifications": null,
+        "wins": ["Monolith", "Teeny Tiny Gaps", "Tower of Ice", "Edifice of Woven Pain"]
     }
 }
